@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculator</title>
+</head>
+<body>
+    <input type="text" value="55" class="input1">
+    
+    +
+
+    <input type="text" value="" class="input2">
+
+    =
+
+    <span class="outp">55</span>NT
+
+    <input type="button" class="bt" value="計算">
+  <script>
+  var input1=document.querySelector(".input1");
+  var input2=document.querySelector(".input2");
+  var outp=document.querySelector(".outp");
+  var bt=document.querySelector(".bt");
+
+  bt.addEventListener('click',function(){
+      var input11=parseInt(input1.value);
+      var input22=parseInt(input2.value);
+      var outps=input11+input22;
+
+      outp.textContent=outps;
+  })
+  </script>
+</body>
+</html>
